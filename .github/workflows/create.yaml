@@ -15,4 +15,4 @@ jobs:
       - name: Change and Commit
         run: |
           echo "Using Branch: ${{ github.event.ref }}"
-          #          bash push.sh
+          bash push.sh
