@@ -1,0 +1,10 @@
+name: Inherit Checkout
+on:
+  push:
+    paths-ignore:
+      - deployment/**
+jobs:
+  environment:
+    name: Environment
+    uses: ./.github/workflows/create.yaml
+    secrets: inherit
